@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="addBatch.css">
+<title>Add Batch</title>
+</head>
+<body>
+
+	<h2>Add Batch</h2>
+
+	<form action="BatchServlet" method="post">
+	    <label for="name">Name: </label>
+		<input type="text" name="name" required><br>
+		
+		<label for="batch">Batch: </label> 
+		<input type="text" name="batch" required><br>
+		
+		<input type ="hidden" name="action" value="create" /><br>
+		<br>
+		
+		<button type="submit">ADD BATCH</button>
+	</form>
+	
+	
+</body>
+</html>

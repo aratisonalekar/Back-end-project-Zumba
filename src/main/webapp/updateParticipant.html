@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="updateParticipant.css">
+<title>Update Participant</title>
+</head>
+<body>
+<h2>Update Participant</h2>
+<form action="ParticipantServlet" method="post">
+
+          <label>Batch Id: </label>
+          <input type="number" name="batchId" required /><br>
+          
+          <label for="name">New Name: </label>
+          <input type="text" name="name"><br>
+          
+          <label for="age">New Age</label>
+          <input type="number" name="age" required /><br>
+          
+          <label for="email">New Email: </label>
+          <input type="email" name="email" required /><br>
+          
+          <label for="mobileNo">New Mobile No: </label>
+          <input type="number" name="mobileNo" required /><br>
+          
+          <label for="gender"> New Gender: </label>
+        <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+         <input type ="hidden" name="action" value="create" /><br>
+		<br>   
+
+        <button type="submit">Update Participant</button> 
+</form>
+
+
+<h2>Delete Participant</h2> 
+
+ <form action="ParticipantServlet" method="post">
+         <label> ID : </label>
+         <input type="number" name="id" required />
+         <input type="hidden" name="action" value="delete"/>
+         <input type ="hidden" name="action" value="create" /><br>
+		<br>
+         <button type="submit">Delete Participant</button>
+ </form>        
+</body>
+</html>

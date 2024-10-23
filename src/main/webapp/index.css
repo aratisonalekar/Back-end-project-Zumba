@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Page header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #333;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Responsive table for smaller screens */
+@media (max-width: 600px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    td {
+        text-align: right;
+        padding-right: 20px;
+    }
+}
+
+.back-img {
+    background: url("img/zumba.jpg") no-repeat center center;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;  /* Keep image fixed when scrolling */
+    display: flex;
+    align-items: center;  /* Vertically align content inside */
+    justify-content: center;  /* Horizontally align content inside */
+}

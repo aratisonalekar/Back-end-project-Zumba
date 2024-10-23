@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="addParticipant.css">
+<title>Add Participant</title>
+</head>
+<body>
+
+<h1>Participant Details</h1>
+
+<h2>Add Participant Details</h2>
+
+
+<form action="ParticipantServlet" method="post">
+        <label for="name">Name: </label>
+        <input type="text" name="name" required /><br>
+        
+        <label for="age">Age: </label>
+        <input type="number" name="age" required /><br>
+        
+        <label for="email">Email: </label>
+        <input type="email" name="email" required/><br>
+        
+        <label for="mobileNo">Mobile No: </label>
+        <input type="number" name="mobileNo" required /><br>
+        
+        <label for="gender">Gender: </label>
+        <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+         <input type ="hidden" name="action" value="create" /><br>
+		<br>   
+        
+
+        
+        <button type="submit">Add Participant</button>       
+
+
+</form>
+
+</body>
+</html>
